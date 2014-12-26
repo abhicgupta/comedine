@@ -1,0 +1,25 @@
+<!-- The frame layout is here since we will be showing either
+    the empty view or the list view.  -->
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1" >
+    <!-- Here is the list. Since we are using a ListActivity, we
+         have to call it "@android:id/list" so ListActivity will
+         find it -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="418dp"
+        android:id="@+id/itemsList"
+        android:layout_gravity="center_horizontal|top" />
+
+    <!-- Here is the view to show if the list is emtpy -->
+    <TextView android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No items."/>
+
+</FrameLayout>
+<!-- From: file:/Users/abhinavgupta/AndroidstudioProjects/comedinewithnavi1/app/src/main/res/layout/fragment_collection_object.xml -->
